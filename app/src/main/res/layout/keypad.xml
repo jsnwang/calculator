@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnOne"
+        android:text="@string/_1"
+        style="@style/RoundButton"
+        app:layout_constraintTop_toBottomOf="@id/gl_h1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/gl_v1"
+        app:layout_constraintBottom_toTopOf="@id/gl_h2"/>
+    <Button
+        android:id="@+id/btnTwo"
+        android:text="@string/_2"
+        style="@style/RoundButton"
+        app:layout_constraintTop_toBottomOf="@id/gl_h1"
+        app:layout_constraintStart_toEndOf="@id/gl_v1"
+        app:layout_constraintEnd_toStartOf="@id/gl_v2"
+        app:layout_constraintBottom_toTopOf="@id/gl_h2"/>
+    <Button
+        android:id="@+id/btnThree"
+        android:text="@string/_3"
+        style="@style/RoundButton"
+        app:layout_constraintStart_toEndOf="@id/gl_v2"
+        app:layout_constraintTop_toBottomOf="@id/gl_h1"
+        app:layout_constraintBottom_toTopOf="@id/gl_h2"
+        app:layout_constraintEnd_toStartOf="@id/gl_v3"/>
+
+    <Button
+        android:id="@+id/btnPlus"
+        android:text="@string/_plus"
+        style="@style/RoundButton.Orange"
+        app:layout_constraintBottom_toTopOf="@id/gl_h2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/gl_v3"
+        app:layout_constraintTop_toTopOf="@id/gl_h1"/>
+    <Button
+       android:id="@+id/btnFour"
+        android:text="@string/_4"
+        style="@style/RoundButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gl_h2"
+        app:layout_constraintBottom_toTopOf="@id/gl_h3"
+        app:layout_constraintEnd_toStartOf="@id/gl_v1" />
+
+    <Button
+        android:id="@+id/btnFive"
+        android:text="@string/_5"
+        style="@style/RoundButton"
+        app:layout_constraintBottom_toTopOf="@id/gl_h3"
+        app:layout_constraintEnd_toStartOf="@id/gl_v2"
+        app:layout_constraintStart_toEndOf="@id/gl_v1"
+        app:layout_constraintTop_toBottomOf="@id/gl_h2" />
+
+    <Button
+        android:id="@+id/btnSix"
+        android:text="@string/_6"
+        style="@style/RoundButton"
+        app:layout_constraintBottom_toTopOf="@id/gl_h3"
+        app:layout_constraintEnd_toStartOf="@id/gl_v3"
+        app:layout_constraintStart_toEndOf="@id/gl_v2"
+        app:layout_constraintTop_toBottomOf="@id/gl_h2" />
+
+    <Button
+        android:id="@+id/btnMinus"
+        android:text="@string/_minus"
+        style="@style/RoundButton.Orange"
+        app:layout_constraintBottom_toTopOf="@id/gl_h3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/gl_v3"
+        app:layout_constraintTop_toBottomOf="@id/gl_h2" />
+
+    <Button
+        android:id="@+id/btnSeven"
+        android:text="@string/_7"
+        style="@style/RoundButton"
+        app:layout_constraintBottom_toTopOf="@id/gl_h4"
+        app:layout_constraintEnd_toStartOf="@id/gl_v1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gl_h3" />
+
+    <Button
+        android:id="@+id/btnEight"
+        android:text="@string/_8"
+        style="@style/RoundButton"
+        app:layout_constraintBottom_toTopOf="@id/gl_h4"
+        app:layout_constraintEnd_toStartOf="@id/gl_v2"
+        app:layout_constraintStart_toEndOf="@id/gl_v1"
+        app:layout_constraintTop_toBottomOf="@id/gl_h3" />
+
+    <Button
+        android:id="@+id/btnNine"
+        android:text="@string/_9"
+        style="@style/RoundButton"
+        app:layout_constraintBottom_toTopOf="@id/gl_h4"
+        app:layout_constraintEnd_toStartOf="@id/gl_v3"
+        app:layout_constraintStart_toEndOf="@id/gl_v2"
+        app:layout_constraintTop_toBottomOf="@id/gl_h3" />
+    <Button
+        android:id="@+id/btnTimes"
+        android:text="@string/_times"
+        style="@style/RoundButton.Orange"
+        app:layout_constraintStart_toEndOf="@id/gl_v3"
+        app:layout_constraintTop_toBottomOf="@id/gl_h3"
+        app:layout_constraintBottom_toTopOf="@id/gl_h4"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+        android:id="@+id/btnZero"
+        android:text="@string/_0"
+        style="@style/RoundButton.Zero"
+        android:paddingStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gl_h4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/gl_v2" />
+    <Button
+        android:id="@+id/btnDot"
+        android:text="@string/_dot"
+        style="@style/RoundButton"
+        app:layout_constraintStart_toEndOf="@id/gl_v2"
+        app:layout_constraintTop_toBottomOf="@id/gl_h4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/gl_v3" />
+
+    <Button
+        android:id="@+id/btnEquals"
+        android:text="@string/_equals"
+        style="@style/RoundButton.LightGray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/gl_v3"
+        app:layout_constraintTop_toBottomOf="@id/gl_h4" />
+    <Button
+        android:id="@+id/btnDivide"
+        android:text="@string/_divide"
+        style="@style/RoundButton.Orange"
+        app:layout_constraintStart_toEndOf="@id/gl_v3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/gl_h1"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <Button
+        android:id="@+id/btnC"
+        android:text="@string/_C"
+        style="@style/RoundButton.Orange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/gl_h1"
+        app:layout_constraintEnd_toEndOf="@id/gl_v1" />
+    <Button
+        android:id="@+id/btnChangeSign"
+        android:text="@string/_plusminus"
+        style="@style/RoundButton.Orange"
+        app:layout_constraintStart_toEndOf="@id/gl_v1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/gl_h1"
+        app:layout_constraintEnd_toEndOf="@id/gl_v2" />
+    <Button
+        android:id="@+id/btnPercent"
+        android:text="@string/_percent"
+        style="@style/RoundButton.Orange"
+        app:layout_constraintStart_toEndOf="@id/gl_v2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/gl_h1"
+        app:layout_constraintEnd_toEndOf="@id/gl_v3" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gl_v1"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".25"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gl_v2"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".50"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gl_v3"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".75"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gl_h1"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".2"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gl_h2"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".4"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gl_h3"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".6"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gl_h4"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".8"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

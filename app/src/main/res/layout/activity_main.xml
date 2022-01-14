@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textBox"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".25"
+        app:layout_constraintVertical_bias="0"
+        android:text="@string/_0"
+        android:textColor="@color/white"
+        android:textAppearance="?attr/textAppearanceHeadline2"
+        android:gravity="bottom|end"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="25"
+        android:textColorHint="@color/white"
+        android:hint="@string/_0"
+        android:paddingEnd="10dp"
+        android:paddingStart="0dp"
+        />
+    <include
+        android:id="@+id/keypad"
+        layout="@layout/keypad"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textBox"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

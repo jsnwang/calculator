@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ShapeAppearanceOverlay.MyApp.Button.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="RoundButton" parent="Widget.Material3.Button.Icon">
+        <item name="android:layout_height">90dp</item>
+        <item name="android:layout_width">90dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textAppearance">?attr/textAppearanceHeadline4</item>
+        <item name="shapeAppearance">@style/ShapeAppearanceOverlay.MyApp.Button.Circle</item>
+        <item name="android:backgroundTint">#3B3C3C</item>
+    </style>
+    <style name="RoundButton.Orange">
+        <item name="android:backgroundTint">@android:color/holo_orange_dark</item>
+    </style>
+    <style name="RoundButton.Clear">
+        <item name="android:backgroundTint">@android:color/holo_orange_dark</item>
+        <item name="android:layout_width">180dp</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+    <style name="RoundButton.LightGray">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:backgroundTint">#9FA0A1</item>
+    </style>
+    <style name="RoundButton.Zero">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+</resources>
